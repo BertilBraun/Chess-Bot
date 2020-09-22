@@ -1,0 +1,4 @@
+python -O -m 
+
+
+pyinstaller --onefile --windowed --noconsole --icon Res\Icon.ico Chess.py
