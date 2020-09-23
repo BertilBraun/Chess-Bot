@@ -23,12 +23,12 @@ class State:
       
 def playClick():
     setActiveScene(PLAYING)
-    with open("GameLog.txt", "w") as f:
+    with open("Res/GameLog.txt", "w") as f:
         pass
 
 def loadClick():
     setActiveScene(PLAYING)
-    activeScene().board.load("GameLog.txt")
+    activeScene().board.load("Res/GameLog.txt")
 
 class MainMenu(State):
     def __init__(self):

@@ -69,9 +69,9 @@ class Board:
     def load(self, path):
         self.initBoard()
 
-        with open("GameLog.txt", "r") as f:
+        with open("Res/GameLog.txt", "r") as f:
             lines = f.readlines()
-        with open("GameLog.txt", "w") as f:
+        with open("Res/GameLog.txt", "w") as f:
             pass
 
         for line in lines:
@@ -111,7 +111,7 @@ class Board:
         self.board[fx][fy] = None
 
         # store moves to log file -> can be loaded in menu
-        with open("GameLog.txt", "a") as f:
+        with open("Res/GameLog.txt", "a") as f:
             f.write(getLocationName(fx, fy) + getLocationName(tx, ty) + "\n")
 
         self.nextTurn(typeofeaten)
